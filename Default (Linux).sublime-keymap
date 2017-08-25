@@ -1,0 +1,121 @@
+[
+    { "keys": ["f12"], "command": "reindent"},
+    { "keys": ["alt+d"], "command": "goto_definition" },
+    { "keys": ["ctrl+end"], "command": "close_all" },
+    { "keys": ["ctrl+."], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+    { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 5.0} },
+    { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -5.0} },
+    { "keys": ["ctrl+shift+w"], "command": "close_all" },
+    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+    {
+        "keys": [
+            "ctrl+m"
+        ],
+        "args": {
+            "action": "matching_pair"
+        },
+        "command": "run_emmet_action",
+        "context": [
+            {
+                "key": "emmet_action_enabled.matching_pair"
+            }
+        ]
+    },
+    { "keys": ["f8"], "command": "change_quotes" },
+    {"keys": ["f5"], "command": "find_use"},
+    {"keys": ["f4"], "command": "import_namespace"},
+
+    // override CSS auto-insertion of semi-colon
+    { "keys": [":"], "command": "insert_snippet", "args": {"contents": ":$0"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "source.css - meta.selector.css", "match_all": true },
+            { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\}|$)", "match_all": true }
+        ]
+    },
+
+
+    { "keys": ["ctrl+0"], "command": "toggle_comment", "args": { "block": false } },
+
+    {
+        "keys": ["ctrl+shift+k","ctrl+shift+m"],
+        "command": "javatar_util",
+        "args": {
+            "util_type": "parse",
+            "text": "#"
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+k"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "main"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+h"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "help"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+b"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "builds"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+j"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "calls"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+o"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "operations"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+n"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "creates"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+,"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "project_settings"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+."],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "global_settings"
+            }
+        }
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+p"],
+        "command": "javatar_create_package"
+    },{
+        "keys": ["ctrl+shift+k","ctrl+shift+i"],
+        "command": "javatar_organize_imports"
+    }
+]
