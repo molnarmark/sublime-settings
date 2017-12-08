@@ -1,1 +1,2 @@
-# settings
+# My Sublime Stuff & Dotfiles
+
