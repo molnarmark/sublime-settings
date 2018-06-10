@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Behave Color Scheme"
 	],
 	"installed_packages":
 	[
@@ -10,17 +11,22 @@
 		"Auto Semi-Colon",
 		"AutoFileName",
 		"Babel",
+		"Behave Color Scheme",
 		"BracketGuard",
 		"ChangeQuotes",
 		"Color Highlighter",
 		"ColorPicker",
+		"EditorConfig",
 		"Emmet",
-		"Expand Selection to Whitespace",
+		"ExpandRegion",
+		"FileIcons",
+		"FuzzyFilePath",
 		"Gitignore",
 		"GoSublime",
 		"GotoTab",
-		"Guna",
+		"Gutter Color",
 		"Hide Menu",
+		"HyperClick",
 		"JavaScript Completions",
 		"LiveReload",
 		"NodeRequirer",
@@ -28,14 +34,18 @@
 		"OrigamiEmacs",
 		"Package Control",
 		"PackageResourceViewer",
+		"Pretty JSON",
 		"Sass",
+		"Seti_UI",
+		"Seti_UX",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"TabsExtra",
 		"TerminalView",
-		"Theme - Glacier",
+		"Theme - One Dark",
 		"Theme - Spaceblack",
+		"Theme - Spacegray",
 		"TodoReview",
 		"TypeScript"
 	]

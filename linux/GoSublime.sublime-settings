@@ -1,0 +1,21 @@
+{
+  "autocomplete_suggest_imports": true,
+  "autocomplete_builtins": true,
+  "use_gs_gopath": true,
+
+  "env": {"GOROOT": "/usr/local/go/", "GOPATH": "~/go/"},
+  "fmt_cmd": ["goimports"],
+  "comp_lint_enabled": true,
+  "comp_lint_commands": [
+    {"cmd": ["golint *.go"], "shell": true},
+    {"cmd": ["go", "vet"]},
+    {"cmd": ["go", "install"]}
+  ],
+
+  "on_save": [
+    {"cmd": "gs_comp_lint"}
+  ],
+  "calltips": true,
+  "use_named_imports": true,
+  "autoinst": true,
+}
