@@ -1,0 +1,53 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Auto Semi-Colon",
+		"Babel",
+		"BracketGuard",
+		"BracketHighlighter",
+		"ChangeQuotes",
+		"ChannelRepositoryTools",
+		"ColorPicker",
+		"Crystal",
+		"EditorConfig",
+		"ExpandRegion",
+		"Gitignore",
+		"Gofmt",
+		"GoImports",
+		"Hide Menu",
+		"HyperClick",
+		"ImportHelper",
+		"JsonTree",
+		"JsPrettier",
+		"LiveReload",
+		"LSP",
+		"MarkdownPreview",
+		"Modific",
+		"NodeRequirer",
+		"Origami",
+		"Package Control",
+		"PackageResourceViewer",
+		"Sass",
+		"Seti_UI",
+		"Seti_UX",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-tslint",
+		"TabsExtra",
+		"TerminalView",
+		"Terminus",
+		"theme-itg-flat",
+		"TodoReview",
+		"TypeScript",
+		"Vue Syntax Highlight"
+	],
+	"repositories":
+	[
+		"https://github.com/molnarmark/theme-itg-flat"
+	]
+}

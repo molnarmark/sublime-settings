@@ -1,2 +1,3 @@
-# My Sublime Stuff & Dotfiles
+# My Sublime Stuff
 
+Sublime settings & key bindings & packages I use.
