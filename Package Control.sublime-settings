@@ -1,5 +1,6 @@
 {
 	"bootstrapped": true,
+	"ignore_vcs_packages": true,
 	"in_process_packages":
 	[
 	],
@@ -20,7 +21,6 @@
 		"Emoji",
 		"ExpandRegion",
 		"Gitignore",
-		"GitStatusBar",
 		"Gofmt",
 		"GoImports",
 		"Hide Menu",
@@ -30,6 +30,7 @@
 		"JsPrettier",
 		"LiveReload",
 		"LSP",
+		"LSP-typescript",
 		"MarkdownPreview",
 		"Modific",
 		"NodeRequirer",
@@ -43,11 +44,13 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-tslint",
+		"Svelte",
 		"TabsExtra",
 		"Terminus",
 		"theme-itg-flat",
 		"TodoReview",
 		"TypeScript",
+		"TypeScript Syntax",
 		"Vue Syntax Highlight"
 	],
 	"repositories":
