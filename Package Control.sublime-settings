@@ -30,6 +30,8 @@
 		"JsPrettier",
 		"LiveReload",
 		"LSP",
+		"LSP-css",
+		"LSP-svelte",
 		"LSP-typescript",
 		"MarkdownPreview",
 		"Modific",
@@ -55,6 +57,6 @@
 	],
 	"repositories":
 	[
-		"https://github.com/molnarmark/theme-itg-flat"
+		"https://github.com/molnarmark/theme-itg-flat",
 	]
 }
