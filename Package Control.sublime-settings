@@ -20,8 +20,8 @@
 		"EditorConfig",
 		"Emoji",
 		"ExpandRegion",
+		"GitGutter",
 		"Gitignore",
-		"Gofmt",
 		"GoImports",
 		"Hide Menu",
 		"HyperClick",
@@ -31,10 +31,10 @@
 		"LiveReload",
 		"LSP",
 		"LSP-css",
+		"LSP-pyright",
 		"LSP-svelte",
 		"LSP-typescript",
 		"MarkdownPreview",
-		"Modific",
 		"NodeRequirer",
 		"Origami",
 		"Package Control",
@@ -44,6 +44,7 @@
 		"Seti_UI",
 		"Seti_UX",
 		"SideBarEnhancements",
+		"sublime-slick-ui",
 		"SublimeLinter",
 		"SublimeLinter-tslint",
 		"Svelte",
@@ -51,12 +52,11 @@
 		"Terminus",
 		"theme-itg-flat",
 		"TodoReview",
-		"TypeScript",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight"
 	],
 	"repositories":
 	[
-		"https://github.com/molnarmark/theme-itg-flat",
+		"https://github.com/molnarmark/theme-itg-flat"
 	]
 }
