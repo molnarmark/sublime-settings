@@ -4,11 +4,12 @@
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 0,
 	"auto_complete_on_tab": true,
-	"caret_type": "solid",
+	"caret_style": "smooth",
 	"color_scheme": "Packages/User/JustBlack.sublime-color-scheme",
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"enable_inline_error_tips": true,
+	"inactive_sheet_dimming": false,
 	"file_exclude_patterns":
 	[
 		"node_modules",
@@ -16,19 +17,19 @@
 	],
 	"find_selected_text": true,
 	"fold_buttons": false,
-	"font_face": "Cascadia Code Bold",
+	"font_face": "Liga Ubuntu Mono Bold",
 	"font_options":
 	[
 		"gray_antialias",
 		"subpixel_antialias"
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -51,11 +52,9 @@
 	],
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"ui_fix_tab_labels": true,
-	"ui_font_roboto_mono": true,
 	"ui_scale": 1.2,
 	"ui_separator": true,
 	"ui_wide_scrollbars": true,
 	"update_check": true,
-	"wrap_width": 130
+	"wrap_width": 130,
 }
