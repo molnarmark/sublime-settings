@@ -1,5 +1,5 @@
 {
-	"always_show_minimap_viewport": false,
+	"always_show_minimap_viewport": true,
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 0,
@@ -9,18 +9,22 @@
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"enable_inline_error_tips": true,
+	/*"always_show_minimap_viewport": true,*/
 	"inactive_sheet_dimming": false,
 	"folder_exclude_patterns": [".git"],
 	"find_selected_text": true,
 	"fold_buttons": false,
-	"font_face": "Ubuntu Mono Ligaturized Bold",
-	"font_size": 18,
+	// "font_face": "Ubuntu Mono Ligaturized Bold",
+	"font_face": "Martian Mono Cn Bd",
+	// "font_size": 18,
+	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
-	"block_caret": true,
 	"ignored_packages":
 	[
+		"Markdown",
+		"Rust",
 		"Vintage",
 	],
 	"indent_guide_options":
