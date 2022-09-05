@@ -1,0 +1,58 @@
+[
+   { "keys": ["super+t"], "command": "new_file" },
+   { "keys": ["super+shift+up"], "command": "swap_line_up" },
+   { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+   { "keys": ["super+shift+down"], "command": "swap_line_down" },
+    {"keys": ["alt+super+shift+w"], "command": "close_all"},
+    {"keys": ["super+0"], "command": "toggle_comment", "args": { "block": false }},
+    {"keys": ["alt+s"], "command": "focus_side_bar"},
+    {"keys": ["super+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false}},
+    {"keys": ["super+alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false}},
+    {"keys": ["super+shift+w"], "command": "expand_selection_to_whitespace"},
+    {"keys": ["alt+up"], "command": "move_by_paragraph", "args": {"forward": false}},
+    {"keys": ["alt+down"], "command": "move_by_paragraph", "args": {"forward": true}},
+    {"keys": ["f12"], "command": "reindent"},
+    {"keys": ["super+shift+q"], "command": "select_quoted"},
+    {"keys": ["super+alt+p"], "command": "prompt_select_workspace"},
+    {"keys": ["alt+d"], "command": "goto_definition"},
+    {"keys": ["super+end"], "command": "close_all"},
+    {"keys": ["super+."], "command": "toggle_side_bar"},
+    {"keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    {"keys": ["super+s"], "command": "save"},
+    { "keys": ["shift+space"], "command": "expand_region" },
+    {
+      "keys": ["super+u"],
+      "command": "expand_region",
+      "args": {"undo": true},
+      "context": [{ "key": "expand_region_soft_undo" }]
+    },
+
+    // Movement bindings
+    {"keys": ["super+up"], "command": "scroll_lines", "args": {"amount": 5.0}},
+    {"keys": ["super+down"], "command": "scroll_lines", "args": {"amount": -5.0}},
+
+    {"keys": ["super+v"], "command": "paste_and_indent"},
+
+    // Change Quotes Plugin
+    {"keys": ["f8"], "command": "change_quotes"},
+    {"keys": ["super+b"], "command": "find_all_under"},
+    { "keys": ["super+alt+t"], "command": "open_terminal" },
+
+    // Gleam
+    {"keys": ["f3"], "command": "gleam_fmt"},
+
+    // Console Toggle
+    {"keys": ["home"], "command": "show_panel", "args": {"panel": "console", "toggle": true}},
+    { "keys": ["super+k", "super+w"], "command": "destroy_pane", "args": {"direction": "self"} },
+    { "keys": ["end"], "command": "js_prettier" },
+    {
+        "keys": ["alt+2"],
+        "command": "copilot_accept_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    },
+]
