@@ -1,5 +1,6 @@
 {
 	"bootstrapped": true,
+	"auto_upgrade": false,
 	"ignore_vcs_packages": true,
 	"in_process_packages":
 	[
@@ -7,7 +8,6 @@
 	"installed_packages":
 	[
 		"A File Icon",
-		"Auto Semi-Colon",
 		"Babel",
 		"BracketGuard",
 		"BracketHighlighter",
@@ -15,8 +15,11 @@
 		"ChannelRepositoryTools",
 		"Clickable URLs",
 		"ColorPicker",
+		"Colorsublime",
 		"Crystal",
+		"Decent Swift Syntax",
 		"EditorConfig",
+		"Emmet",
 		"Emoji",
 		"ExpandRegion",
 		"GitGutter",
@@ -28,17 +31,25 @@
 		"JsonTree",
 		"JsPrettier",
 		"LiveReload",
+		"Log Highlight",
 		"LSP",
 		"LSP-css",
 		"LSP-pyright",
+		"LSP-rust-analyzer",
+		"LSP-SourceKit",
 		"LSP-svelte",
-		"LSP-typescript",
+		"MarkdownEditing",
+		"MarkdownLivePreview",
 		"MarkdownPreview",
+		"Monokai Extended",
 		"NodeRequirer",
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
 		"Pretty JSON",
+		"rainbow_csv",
+		"RemoveDuplicateLines",
+		"Rust Enhanced",
 		"Sass",
 		"Seti_UI",
 		"Seti_UX",
@@ -48,13 +59,14 @@
 		"Svelte",
 		"TabsExtra",
 		"Terminus",
+		"Theme - Gravity",
 		"theme-itg-flat",
 		"TodoReview",
+		"TOML",
 		"TypeScript Syntax",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
 	],
 	"repositories":
 	[
-		"https://github.com/molnarmark/theme-itg-flat"
-	]
+	],
 }
