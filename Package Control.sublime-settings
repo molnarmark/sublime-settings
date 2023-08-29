@@ -9,6 +9,7 @@
 	[
 		"A File Icon",
 		"Babel",
+		"BetterFindBuffer",
 		"BracketGuard",
 		"BracketHighlighter",
 		"ChangeQuotes",
@@ -22,6 +23,7 @@
 		"Emmet",
 		"Emoji",
 		"ExpandRegion",
+		"Find++",
 		"GitGutter",
 		"Gitignore",
 		"GoImports",
