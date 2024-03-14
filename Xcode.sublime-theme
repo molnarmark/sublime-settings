@@ -8,13 +8,67 @@
   },
   "rules": [
     {
-        "class": "tabset_control",
-        "layer1.tint": "#17171b",
-        "layer1.opacity": { "target": 1.0, "speed": 10.0, "interpolation": "smoothstep" },
+      "class": "icon_regex",
+      "layer0.tint": "#8a5493",
+      "content_margin": 12
+    },
+    {
+      "class": "icon_case",
+      "layer0.tint": "#8a5493",
+      "content_margin": 12
+    },
+    {
+      "class": "icon_wrap",
+      "layer0.tint": "#8a5493",
+      "content_margin": 12
+    },
+    {
+      "class": "icon_in_selection",
+      "layer0.tint": "#8a5493",
+      "content_margin": 12
+    },
+    {
+      "class": "icon_highlight",
+      "layer0.tint": "#8a5493",
+      "content_margin": 12
+    },
+    {
+      "class": "icon_whole_word",
+      "layer0.tint": "#8a5493",
+      "content_margin": 12
+    },
+    {
+      "class": "text_line_control",
+      "content_margin": [5, 0, 5, 0]
+    },
+    {
+      "class": "tabset_control",
+      "layer1.tint": "#17171b",
+      "layer1.opacity": {
+        "target": 1.0,
+        "speed": 10.0,
+        "interpolation": "smoothstep"
+      }
+    },
+    {
+      "class": "puck_control",
+      "layer0.tint": "#39223d",
+      "layer0.opacity": 1,
+      "layer0.inner_margin": 2,
+      "blur": false
+    },
+    {
+      "class": "minimap_control",
+      "viewport_color": "#39223d",
+    },
+    {
+      "class": "minimap_control",
+      "attributes": ["hover"],
+      "viewport_color": "#4e3053"
     },
     {
       "class": "tab_control",
-      "layer0.tint": "#17171b",
+      "layer0.tint": "#17171b"
     },
     {
       "class": "title_bar",
@@ -28,7 +82,7 @@
     },
     {
       "class": "status_bar",
-      "layer0.tint": "#17181b",
+      "layer0.tint": "#17181b"
     },
     {
       "class": "label_control",
@@ -39,38 +93,33 @@
       ],
       "fg": "#cecece50",
       "font.size": 11,
-      "content_margin": [5, 5],
+      "content_margin": [5, 5]
     },
     {
       "class": "tree_row",
-      "attributes": [
-        "selectable",
-        "hover"
-      ],
+      "attributes": ["selectable", "hover"],
       "layer0.tint": "#712a73",
-      "layer0.opacity": 1,
+      "layer0.opacity": 1
     },
     {
       "class": "tree_row",
-      "attributes": [
-        "selected"
-      ],
+      "attributes": ["selected"],
       "layer0.tint": "#712a73",
       "layer0.opacity": 1
     },
     {
       "class": "sidebar_tree",
-      "row_padding": [12, 3, 12, 3],
+      "row_padding": [12, 3, 12, 3]
     },
     {
       "class": "icon_folder",
       "layer0.tint": "#cecece50",
       "layer0.opacity": 1,
-      "content_margin": [10, 10],
+      "content_margin": [10, 10]
     },
     {
-        "class": "sidebar_container",
-        "content_margin": -10
+      "class": "sidebar_container",
+      "content_margin": -10
     },
     {
       "class": "sidebar_heading",
@@ -79,28 +128,52 @@
     {
       "class": "sidebar_label",
       "fg": "#ffffff50",
-      "font.size": 13,
+      "font.size": 13
     },
     {
       "class": "sidebar_label",
       "parents": [
         {
           "class": "tree_row",
-          "attributes": [
-            "selected"
-          ]
+          "attributes": ["selected"]
         }
       ],
       "fg": "#ffffff"
     },
     {
+      "class": "button_control",
+      "layer0.tint": "#39223d",
+      "layer0.opacity": 1.0,
+      "layer1.inner_margin": 4,
+      "layer2.opacity": 0.0,
+      "content_margin": [2, 8, 4, 8]
+    },
+    {
+      "class": "button_control",
+      "attributes": ["hover"],
+      "layer2.opacity": 1.0,
+      "layer2.tint": "#492c4e"
+    },
+    {
+      "class": "label_control",
+      "parents": [{ "class": "button_control" }],
+      "fg": "#b3b3b4",
+      "font.bold": true,
+      "font.size": "12px"
+    },
+    {
+      "class": "label_control",
+      "parents": [{ "class": "button_control", "attributes": ["hover"] }],
+      "fg": "white",
+      "font.bold": true,
+      "font.size": "12px"
+    },
+    {
       "class": "vcs_status_badge",
       "parents": [
         {
           "class": "file_system_entry",
-          "attributes": [
-            "untracked"
-          ]
+          "attributes": ["untracked"]
         }
       ],
       "layer0.tint": "#ffffff"
@@ -110,9 +183,7 @@
       "parents": [
         {
           "class": "file_system_entry",
-          "attributes": [
-            "modified"
-          ]
+          "attributes": ["modified"]
         }
       ],
       "layer0.tint": "#ffffff"
@@ -122,9 +193,7 @@
       "parents": [
         {
           "class": "file_system_entry",
-          "attributes": [
-            "missing"
-          ]
+          "attributes": ["missing"]
         }
       ],
       "layer0.tint": "#ffffff"
@@ -134,9 +203,7 @@
       "parents": [
         {
           "class": "file_system_entry",
-          "attributes": [
-            "staged"
-          ]
+          "attributes": ["staged"]
         }
       ],
       "layer0.tint": "#ffffff"
@@ -146,9 +213,7 @@
       "parents": [
         {
           "class": "file_system_entry",
-          "attributes": [
-            "added"
-          ]
+          "attributes": ["added"]
         }
       ],
       "layer0.tint": "#ffffff"
@@ -158,9 +223,7 @@
       "parents": [
         {
           "class": "file_system_entry",
-          "attributes": [
-            "deleted"
-          ]
+          "attributes": ["deleted"]
         }
       ],
       "layer0.tint": "#ffffff"
@@ -170,28 +233,20 @@
       "parents": [
         {
           "class": "file_system_entry",
-          "attributes": [
-            "ignored"
-          ]
+          "attributes": ["ignored"]
         }
       ],
       "color": "#ffffff50"
     },
     {
       "class": "tab_control",
-      "attributes": [
-        "selected"
-      ],
+      "attributes": ["selected"],
       "tint_modifier": "#712a7350"
     },
     {
       "class": "tab_control",
-      "attributes": [
-        "dirty"
-      ],
-      "settings": [
-        "highlight_modified_tabs"
-      ],
+      "attributes": ["dirty"],
+      "settings": ["highlight_modified_tabs"],
       "layer2.tint": "#712a73"
     },
     {
@@ -203,9 +258,7 @@
       "parents": [
         {
           "class": "tab_control",
-          "attributes": [
-            "selected"
-          ]
+          "attributes": ["selected"]
         }
       ],
       "fg": "#ffffff"
