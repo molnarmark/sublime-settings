@@ -1,43 +1,152 @@
 [
-    {"keys": ["alt+ctrl+shift+w"], "command": "close_all"},
-    {"keys": ["ctrl+0"], "command": "toggle_comment", "args": { "block": false }},
-    {"keys": ["alt+s"], "command": "focus_side_bar"},
-    {"keys": ["ctrl+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false}},
-    {"keys": ["ctrl+alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false}},
-    {"keys": ["ctrl+shift+w"], "command": "expand_selection_to_whitespace"},
-    {"keys": ["alt+up"], "command": "move_by_paragraph", "args": {"forward": false}},
-    {"keys": ["alt+down"], "command": "move_by_paragraph", "args": {"forward": true}},
-    {"keys": ["f12"], "command": "reindent"},
-    {"keys": ["ctrl+shift+q"], "command": "select_quoted"},
-    {"keys": ["ctrl+alt+p"], "command": "prompt_select_workspace"},
-    {"keys": ["alt+d"], "command": "goto_definition"},
-    {"keys": ["ctrl+end"], "command": "close_all"},
-    {"keys": ["ctrl+."], "command": "toggle_side_bar"},
-    {"keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-    {"keys": ["ctrl+s"], "command": "save"},
+    { "keys": ["ctrl+t"], "command": "new_file" },
+    { "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
+    {
+        "keys": ["ctrl+g"],
+        "command": "show_overlay",
+        "args": { "overlay": "goto", "text": ":" }
+    },
+
+    { "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
+    { "keys": ["alt+ctrl+shift+w"], "command": "close_all" },
+    {
+        "keys": ["ctrl+0"],
+        "command": "toggle_comment",
+        "args": { "block": false }
+    },
+    { "keys": ["alt+s"], "command": "focus_side_bar" },
+    {
+        "keys": ["ctrl+alt+left"],
+        "command": "move_to",
+        "args": { "to": "bol", "extend": false }
+    },
+    {
+        "keys": ["ctrl+alt+right"],
+        "command": "move_to",
+        "args": { "to": "eol", "extend": false }
+    },
+    { "keys": ["ctrl+shift+w"], "command": "expand_selection_to_whitespace" },
+    {
+        "keys": ["alt+up"],
+        "command": "move_by_paragraph",
+        "args": { "forward": false }
+    },
+    {
+        "keys": ["alt+down"],
+        "command": "move_by_paragraph",
+        "args": { "forward": true }
+    },
+    { "keys": ["f12"], "command": "reindent" },
+    { "keys": ["ctrl+shift+q"], "command": "select_quoted" },
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+    { "keys": ["alt+d"], "command": "goto_definition" },
+    { "keys": ["ctrl+end"], "command": "close_all" },
+    { "keys": ["ctrl+."], "command": "toggle_side_bar" },
+    {
+        "keys": ["ctrl+p"],
+        "command": "show_overlay",
+        "args": { "overlay": "goto", "show_files": true }
+    },
+    { "keys": ["ctrl+s"], "command": "save" },
     { "keys": ["shift+space"], "command": "expand_region" },
     {
-      "keys": ["ctrl+u"],
-      "command": "expand_region",
-      "args": {"undo": true},
-      "context": [{ "key": "expand_region_soft_undo" }]
+        "keys": ["ctrl+u"],
+        "command": "expand_region",
+        "args": { "undo": true },
+        "context": [{ "key": "expand_region_soft_undo" }]
     },
 
     // Movement bindings
-    {"keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 5.0}},
-    {"keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -5.0}},
+    {
+        "keys": ["ctrl+up"],
+        "command": "scroll_lines",
+        "args": { "amount": 5.0 }
+    },
+    {
+        "keys": ["ctrl+down"],
+        "command": "scroll_lines",
+        "args": { "amount": -5.0 }
+    },
 
-    {"keys": ["ctrl+v"], "command": "paste_and_indent"},
+    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
 
     // Change Quotes Plugin
-    {"keys": ["f8"], "command": "change_quotes"},
-    {"keys": ["ctrl+b"], "command": "find_all_under"},
+    { "keys": ["f8"], "command": "change_quotes" },
+    { "keys": ["ctrl+b"], "command": "find_all_under" },
     { "keys": ["ctrl+alt+t"], "command": "open_terminal" },
 
     // Gleam
-    {"keys": ["f3"], "command": "gleam_fmt"},
+    { "keys": ["f3"], "command": "gleam_fmt" },
 
     // Console Toggle
-    {"keys": ["home"], "command": "show_panel", "args": {"panel": "console", "toggle": true}},
-    { "keys": ["ctrl+k", "ctrl+w"], "command": "destroy_pane", "args": {"direction": "self"} }
+    {
+        "keys": ["home"],
+        "command": "show_panel",
+        "args": { "panel": "console", "toggle": true }
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+w"],
+        "command": "destroy_pane",
+        "args": { "direction": "self" }
+    },
+    { "keys": ["end"], "command": "js_prettier" },
+    {
+        "keys": ["alt+2"],
+        "command": "copilot_accept_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    },
+    { "keys": ["f4"], "command": "markdown_add_code_block" },
+
+    // Terminus (switching between terminal & editing area)
+    {
+        "args": {
+            "target_type": "view"
+        },
+        "command": "toggle_panel_focus",
+        "context": [
+            {
+                "key": "panel_has_focus",
+                "operand": true,
+                "operator": "equal"
+            }
+        ],
+        "keys": ["ctrl+q", "ctrl+q"]
+    },
+    {
+        "args": {
+            "target_type": "panel"
+        },
+        "command": "toggle_panel_focus",
+        "context": [
+            {
+                "key": "panel_has_focus",
+                "operand": false,
+                "operator": "equal"
+            }
+        ],
+        "keys": ["ctrl+q", "ctrl+q"]
+    },
+    {
+        "keys": ["insert"],
+        "command": "toggle_terminus_panel",
+        "args": {
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+    {
+        "keys": ["alt+w"],
+        "command": "wrap"
+    },
+    {
+        "keys": ["ctrl+shift+a"],
+        "command": "plain_tasks_archive",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "text.todo" }
+        ],
+        "args": { "partial": true }
+    }
 ]
