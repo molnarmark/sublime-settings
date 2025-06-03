@@ -1,0 +1,19 @@
+{
+  "popup_max_characters_width": 60,
+  "on_save_task_timeout_ms": 0,
+  "show_inlay_hints": true,
+  "clients": {
+    "typescript-language-server": {
+      "enabled": true,
+      "command": ["typescript-language-server", "--stdio"],
+      "scopes": ["source.js", "source.ts", "source.jsx", "source.tsx"],
+      "languageId": "javascript"
+    },
+    "godot": {
+      "enabled": true,
+      "command": ["C:\\Program Files (x86)\\Nmap\\ncat.exe", "127.0.0.1", "6005"],
+      // "scopes": ["source.gdscript"],
+      "languageId": "gdscript"
+    }
+  }
+}
