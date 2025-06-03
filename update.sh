@@ -16,5 +16,6 @@ cp "$USER_DIR/PlainTasks.sublime-settings" ./PlainTasks.sublime-settings
 cp "$USER_DIR/Xcode.sublime-theme" ./Xcode.sublime-theme
 cp "$USER_DIR/Xcode.sublime-color-scheme" ./Xcode.sublime-color-scheme
 cp "$USER_DIR/Terminus/Terminus.hidden-color-scheme" ./Terminus.hidden-color-scheme
+cp "$USER_DIR/Log Highlight/default.tmTheme" ./LogHighlight.tmTheme
 
 echo "Copied!"
