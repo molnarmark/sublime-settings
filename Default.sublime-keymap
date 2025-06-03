@@ -1,0 +1,221 @@
+[
+    // Create a new file
+    { "keys": ["ctrl+t"], "command": "new_file" },
+
+    // Swap the current line with the line above
+    { "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
+
+    // Show Goto Line overlay
+    {
+        "keys": ["ctrl+g"],
+        "command": "show_overlay",
+        "args": { "overlay": "goto", "text": ":" }
+    },
+
+    // Swap the current line with the line below
+    { "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
+
+    // Close all open files
+    { "keys": ["alt+ctrl+shift+w"], "command": "close_all" },
+
+    // Toggle single-line comment
+    {
+        "keys": ["ctrl+0"],
+        "command": "toggle_comment",
+        "args": { "block": false }
+    },
+
+    // Focus the sidebar
+    { "keys": ["alt+s"], "command": "focus_side_bar" },
+
+    // Move cursor to the beginning of the line (BOL)
+    {
+        "keys": ["ctrl+alt+left"],
+        "command": "move_to",
+        "args": { "to": "bol", "extend": false }
+    },
+
+    // Move cursor to the end of the line (EOL)
+    {
+        "keys": ["ctrl+alt+right"],
+        "command": "move_to",
+        "args": { "to": "eol", "extend": false }
+    },
+
+    // Expand selection to the next whitespace
+    { "keys": ["ctrl+shift+w"], "command": "expand_selection_to_whitespace" },
+
+    // Move up by paragraph
+    {
+        "keys": ["alt+up"],
+        "command": "move_by_paragraph",
+        "args": { "forward": false }
+    },
+
+    // Move down by paragraph
+    {
+        "keys": ["alt+down"],
+        "command": "move_by_paragraph",
+        "args": { "forward": true }
+    },
+
+    // Reindent the current line or selection
+    { "keys": ["f12"], "command": "reindent" },
+
+    // Select quoted text
+    { "keys": ["ctrl+shift+q"], "command": "select_quoted" },
+
+    // Prompt to select a workspace
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+
+    // Go to definition of symbol under cursor
+    { "keys": ["alt+d"], "command": "goto_definition" },
+
+    // Close all open files (same as earlier)
+    { "keys": ["ctrl+end"], "command": "close_all" },
+
+    // Toggle visibility of the sidebar
+    { "keys": ["ctrl+."], "command": "toggle_side_bar" },
+
+    // Show overlay to open files
+    {
+        "keys": ["ctrl+p"],
+        "command": "show_overlay",
+        "args": { "overlay": "goto", "show_files": true }
+    },
+
+    // Save the current file
+    { "keys": ["ctrl+s"], "command": "save" },
+
+    // Expand selection by region
+    { "keys": ["shift+space"], "command": "expand_region" },
+
+    // Undo the last expand region operation
+    {
+        "keys": ["ctrl+u"],
+        "command": "expand_region",
+        "args": { "undo": true },
+        "context": [{ "key": "expand_region_soft_undo" }]
+    },
+
+    // Movement bindings
+    // Scroll up by 5 lines
+    {
+        "keys": ["ctrl+up"],
+        "command": "scroll_lines",
+        "args": { "amount": 5.0 }
+    },
+
+    // Scroll down by 5 lines
+    {
+        "keys": ["ctrl+down"],
+        "command": "scroll_lines",
+        "args": { "amount": -5.0 }
+    },
+
+    // Paste and indent the pasted content
+    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+
+    // Change Quotes Plugin
+    // Change the quotes around selected text
+    { "keys": ["f8"], "command": "change_quotes" },
+
+    // Find all occurrences of the current word
+    { "keys": ["ctrl+b"], "command": "find_all_under" },
+
+    // Open terminal (custom command)
+    { "keys": ["ctrl+alt+t"], "command": "open_terminal" },
+
+    // Gleam (custom command)
+    // Format the Gleam code
+    { "keys": ["f3"], "command": "gleam_fmt" },
+
+    // Console Toggle
+    // Show the console panel
+    {
+        "keys": ["home"],
+        "command": "show_panel",
+        "args": { "panel": "console", "toggle": true }
+    },
+
+    // Destroy pane
+    {
+        "keys": ["ctrl+k", "ctrl+w"],
+        "command": "destroy_pane",
+        "args": { "direction": "self" }
+    },
+
+    // Run js_prettier plugin to format code
+    { "keys": ["end"], "command": "js_prettier" },
+
+    // Copilot (AI plugin) - Accept completion suggestion
+    {
+        "keys": ["alt+2"],
+        "command": "copilot_accept_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    },
+
+    // Markdown plugin - Add code block
+    { "keys": ["f4"], "command": "markdown_add_code_block" },
+
+    // Terminus plugin - Switch between terminal and editing area
+    {
+        "args": { "target_type": "view" },
+        "command": "toggle_panel_focus",
+        "context": [
+            { "key": "panel_has_focus", "operand": true, "operator": "equal" }
+        ],
+        "keys": ["ctrl+q", "ctrl+q"]
+    },
+    {
+        "args": { "target_type": "panel" },
+        "command": "toggle_panel_focus",
+        "context": [
+            { "key": "panel_has_focus", "operand": false, "operator": "equal" }
+        ],
+        "keys": ["ctrl+q", "ctrl+q"]
+    },
+
+    // Toggle the Terminus panel
+    {
+        "keys": ["insert"],
+        "command": "toggle_terminus_panel",
+        "args": { "cwd": "${file_path:${folder}}" }
+    },
+
+    // Wrap the selection in quotes or brackets
+    { "keys": ["alt+w"], "command": "wrap" },
+
+    // Archive completed tasks (PlainTasks plugin)
+    {
+        "keys": ["ctrl+shift+a"],
+        "command": "plain_tasks_archive",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "text.todo" }
+        ],
+        "args": { "partial": true }
+    },
+
+    // Emmet plugin - Expand abbreviation
+    {
+        "keys": ["tab", "shift+f5"],
+        "command": "emmet_expand_abbreviation",
+        "args": { "tab": true },
+        "context": [
+            {
+                "operand": "meta.block.tsx, meta.group.braces.round.js, text.html",
+                "operator": "equal",
+                "match_all": true,
+                "key": "selector"
+            },
+            { "match_all": true, "key": "selection_empty" },
+            { "operator": "equal", "operand": false, "match_all": true, "key": "has_next_field" },
+            { "operator": "equal", "operand": false, "match_all": true, "key": "auto_complete_visible" },
+            { "match_all": true, "key": "is_abbreviation" }
+        ]
+    }
+]

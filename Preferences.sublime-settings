@@ -20,13 +20,15 @@
 	"block_caret": true,
 	"wrap_width_style": "min",
 	"indent_to_bracket": true,
-	"font_options": ["subpixel_antialias"],
+	"font_options": ["dlig", "directwrite"],
 	"folder_exclude_patterns":
 	[
-		".git"
+		".git",
+		"node_modules"
 	],
+	"binary_file_patterns": ["node_modules/*"],
 	"font_face": "Martian Mono Cn XBd",
-	// "font_face": "Source Code Pro Black",
+	// "font_face": "Martian Mono Condensed ExtraBold",
 	"font_size": 12,
 	"hide_new_tab_button": true,
 	"hide_tab_scrolling_buttons": true,
@@ -35,14 +37,15 @@
 	"ignored_packages":
 	[
 		"AutoFileName",
-		"Color Highlight",
-		"ColorHelper",
+		"AutoProjects",
+		"LSP-copilot",
 		"Markdown",
+		"Odin",
 		"Rust",
 		"Vintage",
 	],
 	"inactive_sheet_dimming": true,
-	"auto_complete_preserve_order": "strict",
+	"auto_complete_preserve_order": "some",
 	"auto_complete_cycle": true,
 	"focus_on_file_drop": true,
 	"control_character_style": "names",
@@ -58,7 +61,7 @@
 	"overlay_scroll_bars": "enabled",
 	"line_padding_top": 4,
 	"preview_on_click": false,
-	"hot_exit": false,
+	"hot_exit": "disabled",
 	"remember_open_files": false,
 	"remember_workspace": false,
 	"save_on_focus_lost": false,
@@ -76,4 +79,5 @@
 	"ui_wide_scrollbars": true,
 	"update_check": false,
 	"wrap_width": 130,
+	"index_files": true,
 }

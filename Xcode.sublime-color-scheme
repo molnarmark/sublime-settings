@@ -2,6 +2,7 @@
   "name": "Xcode 12 Default Dark",
   "author": "",
   "globals": {
+    "phantom_css": "body{color:color(var(--foreground));background-color:color(var(--background))}a{color:color(var(--bluish))}.error,.deleted{background-color:color(var(--redish) blend(var(--background) 30%))}.success,.inserted{background-color:color(var(--greenish) blend(var(--background) 30%))}.warning,.modified{background-color:color(var(--yellowish) blend(var(--background) 30%))}",
     "brackets_options": "bold underline",
     "tags_options": "bold underline",
     "selection_border": "#39223d",
@@ -40,17 +41,6 @@
     "tags_foreground": "#a85176",
     "shadow": "#"
   },
-  "variables": {
-    "black": "",
-    "white": "",
-    "red": "",
-    "green": "",
-    "yellow": "",
-    "orange": "",
-    "blue": "",
-    "magenta": "",
-    "cyan": ""
-  },
   "rules": [
     {
       "foreground": "#6C7986",
@@ -74,7 +64,6 @@
     },
     {
       "foreground": "#FFA14F",
-      "font_style": 0,
       "scope": "entity.name.function.macro, keyword.control.directive, keyword.control.preprocessor, punctuation.definition.preprocessor"
     },
     {
@@ -84,7 +73,6 @@
     },
     {
       "foreground": "#ACF2E4",
-      "font_style": 0,
       "scope": "entity.name.type.class.std.rust, storage.type.cs, support.type, meta.object-literal.key"
     },
     {
@@ -104,12 +92,11 @@
     },
     {
       "foreground": "#41A1C0",
-      "font_style": 0,
       "scope": "meta.definition.function, meta.definition.method, meta.method.declaration"
     },
     {
       "foreground": "#5DD8FF",
-      "font_style": 0,
+      "font_style": "bold underline",
       "scope": "entity.name.type, entity.other.inherited-class"
     },
     {
@@ -129,7 +116,6 @@
     },
     {
       "foreground": "#67B7A4",
-      "font_style": 0,
       "scope": "entity.name.function.definition, entity.name.function.go, entity.name.type.namespace, entity.name.variable, variable.other.assignment"
     },
     {

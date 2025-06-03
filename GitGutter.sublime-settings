@@ -1,15 +1,18 @@
 // GitGutter Settings - User
 {
-  "show_line_annotation": false,
+  "diff_popup_default_mode": "diff",
+  "show_line_annotation": true,
+  "line_annotation_ignore_whitespace": false,
+  "line_annotation_text": "{{line_author}} ({{line_author_age}}) · {{line_summary}}",
   "status_bar_text": [
-      "{% if repo and branch %}",
-          "{% if not st_git_status %}",
-              "{{repo}}/{{branch}}",
-              "{% if added_files + deleted_files + modified_files > 0 %}*{% endif %}, ",
-          "{% endif %}",
-          "{% if compare not in ('HEAD', branch, None) %}Comparing against {{compare}}, {% endif %}",
-          "{% if state %} 🤔 File is {{state}}{% endif %}",
-          "{% if line_commit and line_commit[:7] != '0000000' %}, ✨ {{line_commit[:7]}} 👋 by {{line_author}} 📅 {{line_author_age}}{% endif %}",
-      "{% endif %}"
-  ]
+       "{% if repo and branch %}",
+           "{% if not st_git_status %}",
+               "{{repo}}/{{branch}}",
+               "{% if added_files + deleted_files + modified_files > 0 %}*{% endif %}, ",
+           "{% endif %}",
+           "{% if compare not in ('HEAD', branch, None) %}Comparing against {{compare}}, {% endif %}",
+           "{% if state %} 🤔 File is {{state}}{% endif %}",
+           "{% if line_commit and line_commit[:7] != '0000000' %}, ✨ {{line_commit[:7]}} 👋 by {{line_author}} 📅 {{line_author_age}}{% endif %}",
+       "{% endif %}"
+   ]
 }

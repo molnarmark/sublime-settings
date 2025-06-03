@@ -1,0 +1,11 @@
+{
+  "initializationOptions": {
+    "preferences": {
+      "includeCompletionsForModuleExports": true,
+      "importModuleSpecifierPreference": "project-relative"
+    }
+  },
+  "settings": {
+    "statusText": "⏏️"
+  }
+}
