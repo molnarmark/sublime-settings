@@ -59,6 +59,12 @@
         "args": { "forward": true }
     },
 
+    // Refresh project files
+    {
+        "keys": ["f5"],
+        "command": "refresh_folder_list"
+    },
+
     // Reindent the current line or selection
     { "keys": ["f12"], "command": "reindent" },
 
