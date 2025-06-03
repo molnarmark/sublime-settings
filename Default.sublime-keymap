@@ -12,6 +12,12 @@
         "args": { "overlay": "goto", "text": ":" }
     },
 
+    // Quit Sublime
+    {
+         "keys": ["ctrl+q"],
+         "command": "exit"
+     },
+
     // Swap the current line with the line below
     { "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
 
@@ -169,22 +175,22 @@
     { "keys": ["f4"], "command": "markdown_add_code_block" },
 
     // Terminus plugin - Switch between terminal and editing area
-    {
-        "args": { "target_type": "view" },
-        "command": "toggle_panel_focus",
-        "context": [
-            { "key": "panel_has_focus", "operand": true, "operator": "equal" }
-        ],
-        "keys": ["ctrl+q", "ctrl+q"]
-    },
-    {
-        "args": { "target_type": "panel" },
-        "command": "toggle_panel_focus",
-        "context": [
-            { "key": "panel_has_focus", "operand": false, "operator": "equal" }
-        ],
-        "keys": ["ctrl+q", "ctrl+q"]
-    },
+    // {
+    //     "args": { "target_type": "view" },
+    //     "command": "toggle_panel_focus",
+    //     "context": [
+    //         { "key": "panel_has_focus", "operand": true, "operator": "equal" }
+    //     ],
+    //     "keys": ["ctrl+q", "ctrl+q"]
+    // },
+    // {
+    //     "args": { "target_type": "panel" },
+    //     "command": "toggle_panel_focus",
+    //     "context": [
+    //         { "key": "panel_has_focus", "operand": false, "operator": "equal" }
+    //     ],
+    //     "keys": ["ctrl+q", "ctrl+q"]
+    // },
 
     // Toggle the Terminus panel
     {
